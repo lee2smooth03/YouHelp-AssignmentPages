@@ -34,13 +34,13 @@ $(".btn-info").on("click", function(e){
 
             var data = {
                 uName: $('#uName').val().trim(),
-                pWord: $('#pWord').val().trim(),
+                pWord: $('#pWord1').val().trim(),
                 created_at: Date()
             }
 
             console.log(data);
 
-            $.post("/login", data, function(stuff){
+            $.post("/signup", data, function(stuff){
                 console.log(stuff);
                 pass1 = "";
                 pass2 = "";

@@ -1,0 +1,82 @@
+body{
+
+	background-color: #bbb;
+}
+#sheet{
+
+	/* how big is it? */
+	width: 450px;
+	height: 600px;
+
+	/* where is it? */
+	position: absolute;
+	top: 50px;
+	left: 50px;
+
+	background-color: #fff;
+}
+
+#workspace{
+
+	/* how big is it? */
+	width: 90%;
+	height: 100%;
+
+	border-left: 1px dashed #aaa;
+}
+
+#logo{
+
+	/* how big is it? */
+	width: 100px;
+	height: 27px;
+
+	/* where is it? */
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	float: left;
+}
+
+#asid{
+
+	/* how big is it? */
+	width: 100px;
+	height: 27px;
+
+	/* where is it? */
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	float: right;
+}
+
+
+#quot{
+
+	/* how big is it? */
+	width: 400px;
+	height: 27px;
+
+	/* where is it? */
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+
+#cont{
+
+	/* how big is it? */
+	width: 400px;
+	height: 27px;
+
+	/* where is it? */
+	position: absolute;
+	top: 10px;
+	left: 5px;
+}
+
+.resting{
+
+	background-color: orange;
+}
