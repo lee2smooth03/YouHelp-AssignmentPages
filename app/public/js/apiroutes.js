@@ -4,13 +4,19 @@ var body-parser = require('body-parser')
 
 
 
-app.get("/api/:login", function(req, res) {
+app.post("/login", function(req, res){})
+
+
+app.get("/login", function(req, res) {
+  console.log(req.body)
+  var user = req.body;
 
     // If the user provides username and password
-    if () {
+    //see if user name exists in database if true res.send then....
+    if (user === ) {
 
       
-    // Otherwise have user sign up
+    // Otherwise send user to sign up page (signup)
     }else {
       
         alert('Please sign up!')
