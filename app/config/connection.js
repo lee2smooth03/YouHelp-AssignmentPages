@@ -16,7 +16,7 @@ var sequelize = new Sequelize("steam_DB", "root", "root", {
 	
   host: "localhost",
   dialect: "mysql",
-  port: 8080 || 8889,
+  port: 3306 || 8889,
   pool: {
     max: 5,
     min: 0,

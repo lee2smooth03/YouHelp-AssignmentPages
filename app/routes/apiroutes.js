@@ -4,6 +4,8 @@ var path = require('path');
 
 var newUser = require("../models/user.js");
 
+module.exports = function(app) {
+
 app.post("/login", function(req, res){
   var loginName = req.body.uName;
 
@@ -46,9 +48,6 @@ app.post("/signup", function(req, res) {
           res.sendFile(path.join(__dirname, 'index.html' ));    
 })
 
- app.get("/asUser", function(req, res) {
-    if (req.params.loginName) {
-
-
-})
+ })
+}
 
