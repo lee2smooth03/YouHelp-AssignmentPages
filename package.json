@@ -1,0 +1,28 @@
+{
+  "name": "assignment-pages",
+  "version": "1.0.0",
+  "description": "first trial of a drag and drop system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lee2smooth03/YouHelp-AssignmentPages.git"
+  },
+  "author": "Keisha L., Sharyn F., Arthur R., IV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lee2smooth03/YouHelp-AssignmentPages/issues"
+  },
+  "homepage": "https://github.com/lee2smooth03/YouHelp-AssignmentPages#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.4.2",
+    "path": "^0.12.7",
+    "sequelize": "^4.8.0"
+  }
+}
