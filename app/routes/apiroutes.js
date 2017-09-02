@@ -19,8 +19,16 @@ app.post("/login", function(req, res){
           res.sendFile(path.join(__dirname, 'positions.html'));
 
     })
-//if admin send dashboard
+//if admin send dashboard **may need to change html name/page not ready
+ USERADMIN.findOne({
+    where: {
+      name: loginName,
+      }
+    }).then(function(result){
+        console.log(result);
+        res.sendFile(path.join(__dirname, 'admin.html'));
 
+    })
 });//app.post
 
 app.post("/signup", function(req, res) {
@@ -37,3 +45,8 @@ app.post("/signup", function(req, res) {
           //if user send assignment page
           res.sendFile(path.join(__dirname, 'index.html' ));    
 })
+
+ app.get("/asUser", function(req, res) {
+    if (req.params.loginName) {
+
+
