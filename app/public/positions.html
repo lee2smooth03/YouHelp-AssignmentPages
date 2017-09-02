@@ -22,7 +22,7 @@
 		<!-- in the future, perhaps the worksheet should be it's own object 	-->
 		<!-- it takes in the same collection of variables/info every time	-->
 
-		<!--	front of the page	-->
+		<!--	front of the page-->
 		<!--	--------------------	-->
 
 		<!--	:: Page Meta Data ::	-->
@@ -78,7 +78,7 @@
 
 	<!--	:: fill this out ::	-->
 	<!--	-------------------	-->
-	<div id="sidebar">
+	<div id="sidebar" class="slideClass-IN">
 		<form>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email address</label>
@@ -105,13 +105,23 @@
 
 			<button type="submit" class="btn btn-default">Submit</button>
 		</form>
+
+		<!-- color band the contains the button -->
+		<div class="band">
+			<div class="bucket">
+
+			</div>
+
+			<!-- Indicates a successful or positive action -->
+			<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+		</div>
 	</div>
 
 	<!-- jQuery CDN -->
 	<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 
 	<!-- let's link to the custom javascript	-->
-	<script type="text/javascript" src="js/position.js"></script>
+	<!-- <script type="text/javascript" src="js/position.js"></script> -->
    </body>
 
 </html>
