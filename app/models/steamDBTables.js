@@ -89,7 +89,7 @@ const USERSTUDENT = sequelize.define("userStudent", {
   },
   subj_visualArtsGPA:{
     type: Sequelize.INTEGER, allowNull: false
-}, {
+  },
   timestamps: false
 }); // End of Sequelize Definition-Configuration
 
@@ -133,15 +133,19 @@ const USERADMIN = sequelize.define("userAdmin", {
   },
   admin_primarySubject:{
     type: Sequelize.INTEGER, allowNull: false
-}, {
+},
   timestamps: false
 });
 
 
 // Syncs with DB
-UserStudent.sync();
-UserAdmin.sync();
+// userStudent.sync();            //modified by Arthur on 09.01.2017
+// userAdmin.sync();              //""
+USERSTUDENT.sync();
+USERADMIN.sync();
 
 // Creates And Makes the Table Models Available For Other Server Side Files
-module.exports = UserStudent;
-module.exports = UserAdmin;
+// module.exports = userStudent;  // ??
+// module.exports = userAdmin;    // ??
+module.exports = USERSTUDENT;
+module.exports = USERADMIN;
