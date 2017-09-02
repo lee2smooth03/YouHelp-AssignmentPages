@@ -10,28 +10,10 @@
 	<!-- let's link to the css page -->
 	<link rel="stylesheet" type="text/css" href="css/position.css">
 
-	<!-- jQuery CDN -->
-	<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
-
-	<!-- let's link to the custom javascript	-->
-	<script type="text/javascript" src="js/Position.js"></script>
    </head>
 
    <body>
-	<!-- create a container div element that will house a child element -->
-	<div id="parent">
-
-	   <!-- create the child element that will move about within the parent -->
-	   <div class="child"><h3>Child #1</h3></div>
-
-	   <!-- create another child element that will move about within the parent -->
-	   <div class="child"><h3>Child #2</h3></div>
 	
-	</div>
-
-		<br/>
-		<br/>
-
 	<!-- create the geometry that is our 8.50" x 11.00" worksheet -->
 	<div id="worksheet" class="front">
 
@@ -97,36 +79,39 @@
 	<!--	:: fill this out ::	-->
 	<!--	-------------------	-->
 	<div id="sidebar">
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			</div>
 
-	<form>
-  	<div class="form-group">
-	     <label for="exampleInputEmail1">Email address</label>
-	     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" id="exampleInputFile">
+
+				<p class="help-block">Example block-level help text here.</p>
+			</div>
+
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> Check me out
+				</label>
+			</div>
+
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
 	</div>
 
-	<div class="form-group">
-	     <label for="exampleInputPassword1">Password</label>
-	     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-	</div>
+	<!-- jQuery CDN -->
+	<script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
 
-	<div class="form-group">
-	     <label for="exampleInputFile">File input</label>
-	     <input type="file" id="exampleInputFile">
-
-	     <p class="help-block">Example block-level help text here.</p>
-	</div>
-
-	<div class="checkbox">
-		<label>
-			<input type="checkbox"> Check me out
-		</label>
-  	</div>
-
-	<button type="submit" class="btn btn-default">Submit</button>
-	</form>
-
-	</div>
-
+	<!-- let's link to the custom javascript	-->
+	<script type="text/javascript" src="js/position.js"></script>
    </body>
 
 </html>
