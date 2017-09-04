@@ -1,0 +1,12 @@
+body {
+	background: black;
+}
+
+.container {
+	padding-top: 75px;
+}
+
+.jumbotron {
+	text-align: center;
+	font-size: 24px;
+}
