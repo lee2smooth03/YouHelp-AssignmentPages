@@ -1,12 +1,23 @@
+
 body {
-	background: black;
+	background: 7F7F7F;
 }
 
 .container {
-	padding-top: 75px;
+	padding-top: 150px;
 }
 
 .jumbotron {
 	text-align: center;
 	font-size: 24px;
+}
+
+#left
+ {
+	margin-right: 20px;
+}
+
+#right
+ {
+	margin-left: 20px;
 }
