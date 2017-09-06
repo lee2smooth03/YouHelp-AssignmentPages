@@ -49,14 +49,15 @@ module.exports = function(app) {
         })
 
     })
-}
-
-//when left arrow is clicked, send admin to the database
-    app.post("/arrows", data, function(req,res){
+//when left arrow is clicked, send admin to the database **not sure of the name of the database that needs to be inserted
+    app.post("/arrows", function(req,res){
         res.sendFile(path.join(__dirname, 'database'));
     })
 
 //when left arrow is clicked, send admin to the positions page
-    app.post("/arrows", data, function(req,res){
+    app.post("/arrows", function(req,res){
         res.sendFile(path.join(__dirname, 'positions.html'));
       })
+
+}
+
